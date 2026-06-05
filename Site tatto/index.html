@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея Татуировок</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Тату Галерея</div>
+        <nav class="main-nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Поиск по тегам...">
+        </div>
+        <div id="gallery">
+            <!-- Галлерея будет заполнена скриптом -->
+        </div>
+    </main>
+    <!-- Модальное окно для увеличения изображения -->
+    <div id="modal" class="hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <div id="tags"></div>
+            <button id="download-btn">Скачать</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Галерея Татуировок</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
